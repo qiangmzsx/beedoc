@@ -118,8 +118,8 @@ beego 中带有很多可配置的参数，我们来一一认识一下它们，�
 #### 基础配置
 
 * AppConfigPath
-配置文件路径，默认是应用程序对应的目录下的 `conf/app.conf`，用户可以在程序代码中修改该值配置自己的配置文件
-`beego.AppConfigPath = "conf/app2.conf"`
+配置文件路径，默认是应用程序对应的目录下的 `conf/app.conf`，用户可以在程序代码中修改该值配置自己的配置文件。1.7之前
+`beego.AppConfigPath = "conf/app2.conf"`，1.7之后使用cnf, err := config.NewConfig("ini", "config.conf")方式。
 
 * AppConfigProvider
 
